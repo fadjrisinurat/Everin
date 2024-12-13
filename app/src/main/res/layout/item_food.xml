@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Rv_food_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFoodlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LightGreen">
+
+            <ImageView
+                android:id="@+id/img_food"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/okarin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/food_name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_food"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/food_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/food_calories"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins2"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/img_food"
+                app:layout_constraintTop_toBottomOf="@+id/food_name" />
+
+            <TextView
+                android:id="@+id/food_carbo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/food_carbo"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins2"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/img_food"
+                app:layout_constraintTop_toBottomOf="@+id/food_calories" />
+
+            <TextView
+                android:id="@+id/food_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/food_fat"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins2"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/img_food"
+                app:layout_constraintTop_toBottomOf="@+id/food_carbo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

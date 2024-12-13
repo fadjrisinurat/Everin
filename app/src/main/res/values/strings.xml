@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Everin</string>
+
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="question">Did not have account? Register now</string>
+    <string name="daftar">Register now</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="previus_password">Previous Password</string>
+    <string name="submit_data">Submit Data</string>
+    <string name="add_new_story">Add New Story</string>
+    <string name="Desc_light">The daily activity is limited to light tasks such as sitting</string>
+    <string name="desc_medium">The combination of sitting and moderate physical activity such as household chores</string>
+    <string name="desc_heavy">Intense physical activity, such as heavy physical work, strenuous exercise</string>
+    <string name="activity">Activity</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="heavy">Heavy</string>
+    <string name="medium">Medium</string>
+    <string name="calculate">Calculate</string>
+    <string name="submit">Submit</string>
+    <string name="light">Light</string>
+    <string name="searchbar_hint">What did you eat today ?</string>
+    <string name="food_question">Input your food that you eat today</string>
+    <string name="age">Age</string>
+    <string name="everin">Everin</string>
+    <string name="calories">Calories</string>
+    <string name="BMR">BMR</string>
+    <string name="protein">Protein</string>
+    <string name="carbohydrate">Carbohydrate</string>
+    <string name="fat">Fat</string>
+    <string name="on_this_day">on this day</string>
+    <string name="status">Your Status</string>
+    <string name="change_profile">Change Profile</string>
+    <string name="upload_statement">upload foto yang anda inginkan</string>
+    <string name="gender">Gender</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="name">Name</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="recommendations">Food Recommendations</string>
+    <string name="food_name">Food name</string>
+    <string name="food_calories">Food calories</string>
+    <string name="food_carbo">Food Carbo</string>
+    <string name="food_fat">Food Fat</string>
+    <string name="nol_kcal">0 kcal/day</string>
+    <string name="nol_g_day">0 g/day</string>
+</resources>

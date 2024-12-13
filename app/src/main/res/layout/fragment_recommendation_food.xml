@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/LightGreen"
+tools:context=".view.main.recommendationfood.RecommendationFoodFragment">
+
+    <TextView
+        android:id="@+id/carbohydrateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carbohydrate"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputcarbohydratelayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/carbohydrateText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputcarbohydrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@drawable/rounded_background_white"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/ProteinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/protein"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins2"
+        app:layout_constraintTop_toBottomOf="@id/inputcarbohydratelayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputProteinlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/ProteinText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@drawable/rounded_background_white"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/FatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fat"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins2"
+            app:layout_constraintTop_toBottomOf="@id/inputProteinlayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputfatlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/FatText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputfat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:background="@drawable/rounded_background_white"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/calculate"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="20sp"
+        android:textColor="@color/LightGreen"
+        android:fontFamily="@font/poppins2"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_background_white"
+        app:layout_constraintTop_toBottomOf="@+id/inputfatlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
